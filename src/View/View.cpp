@@ -17,6 +17,7 @@ void View::agregarFigura() {
     cout << "2. Circulo\n";
     cout << "3. Rectangulo\n";
     cout << "4. Rombo\n";
+    cout << "5. Paralelograma\n";
     cout << "Indique que figura desea agregar:\n";
     cin >> opcion;
     switch (opcion){
@@ -47,6 +48,13 @@ void View::agregarFigura() {
             cout << "Ingrese la diagonal menor del rombo:\n";
             cin >> diagonalMenor;
             programaObj->agregarFigura(lado, diagonalMayor,diagonalMenor);// Importante el casteo para que se llame al metodo correcto
+        }
+        case 5:{
+            cout << "Ingrese la base del Paralelograma:\n";
+            cin >> base;
+            cout << "Ingrese la altura del Paralelograma:\n";
+            cin >> altura;
+            programaObj->agregarFigura(base, altura);
         }
     }
 }
