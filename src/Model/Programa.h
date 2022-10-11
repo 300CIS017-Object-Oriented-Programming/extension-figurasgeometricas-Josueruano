@@ -10,6 +10,7 @@
 #include "../Model/Rectangulo.h"
 #include "../Model/Rombo.h"
 #include "../Model/FiguraGeometrica.h"
+#include "../Model/Paralelogramo.h"
 
 class Programa {
 private:
@@ -23,12 +24,11 @@ public:
     void agregarFigura(float radio);
     void agregarFigura(int base, int altura);
     void agregarFigura(int lado, int diagonalMayor,int diagonalMenor);
+    void agregarFigura1(int base1, int altura1);
     void dibujarFiguras();
     void dibujarFiguras(int color); //sobrecarga del metodo para dibujar con colores
     void mostrarAreaFigura();
     void mostrarPerimetroFigura();
     float calcularSumaAreas();
 };
-
-
 #endif //EJERCICIO_POLIMORFISMO_PROGRAMA_H
